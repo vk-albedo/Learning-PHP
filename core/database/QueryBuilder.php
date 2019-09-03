@@ -29,7 +29,7 @@ class QueryBuilder
         try {
             $statement = $this->pdo->prepare($sql);
             $statement->execute($parameters);
-        } catch (Exception $exeption) {
+        } catch (Exception $exception) {
             die('Whoops, something went wrong.');
         }
     }
